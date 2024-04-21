@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- Linear Layout for the rest of the widgets -->
+
+    <!-- Linear Layout for Bottom Navigation -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="657dp"
+        android:orientation="vertical"
+        android:padding="19dp"
+        tools:context=".CalculatorActivity">
+
+        <EditText
+            android:id="@+id/edtFat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter grams of Fat"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edtProtein"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter grams of Protein"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edtCarbs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter grams of Carbs"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Calculate Calories" />
+
+        <TextView
+            android:id="@+id/txtCalories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</LinearLayout>
