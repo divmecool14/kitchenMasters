@@ -31,7 +31,7 @@ public class RequestManager {
 
     // Method to fetch random recipes from API
     public void getRandomRecipes(RandomRecipeResponseListener listener) {
-        String num = "1";
+        String num = "5";
         CallRandomRecipes callRandomRecipes = retrofit.create(CallRandomRecipes.class); // Create Retrofit service for API call
         Call<RandomRecipeApiResponse> call = callRandomRecipes.callRandomRecipe(num, "cff4fe5f5fd946dfa36b6f19334d5326"); // Make API call to fetch random recipes
         call.enqueue(new Callback<RandomRecipeApiResponse>() { // Asynchronous execution of API call
