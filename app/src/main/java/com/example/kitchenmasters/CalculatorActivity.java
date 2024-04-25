@@ -36,7 +36,7 @@ public class CalculatorActivity extends AppCompatActivity {
             if (item.getItemId() == R.id.home) {
                 startActivity(new Intent(CalculatorActivity.this, MainActivity.class));
                 return true;
-            } else if (item.getItemId() == R.id.list) {
+            } else if (item.getItemId() == R.id.checklist) {
                 startActivity(new Intent(CalculatorActivity.this, List.class));
                 return true;
             } else if (item.getItemId() == R.id.camera) {

@@ -50,8 +50,11 @@ public class Search extends AppCompatActivity {
             if (item.getItemId() == R.id.home) {
                 startActivity(new Intent(Search.this, MainActivity.class));
                 return true;
-            } else if (item.getItemId() == R.id.list) {
+            } else if (item.getItemId() == R.id.checklist) {
                 startActivity(new Intent(Search.this, List.class));
+                return true;
+            } else if (item.getItemId() == R.id.calculator) {
+                startActivity(new Intent(Search.this, CalculatorActivity.class));
                 return true;
             } else if (item.getItemId() == R.id.camera) {
                 startActivity(new Intent(Search.this, Camera.class));

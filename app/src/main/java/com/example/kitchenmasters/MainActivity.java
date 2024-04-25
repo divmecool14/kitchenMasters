@@ -15,7 +15,6 @@ import com.example.kitchenmasters.Listeners.RandomRecipeResponseListener;
 import com.example.kitchenmasters.Models.RandomRecipeApiResponse;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-//cool this one is the one that works
 public class MainActivity extends AppCompatActivity {
 
 
@@ -67,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
     private final RandomRecipeResponseListener randomRecipeResponseListener= new RandomRecipeResponseListener() {
         @Override
         public void didFetch(RandomRecipeApiResponse response, String message) {
-            //these five lines of code are from chatgpt
+
             recyclerView = findViewById(R.id.recycler_random); // Find the RecyclerView in the layout
             recyclerView.setHasFixedSize(true); // Set fixed size for RecyclerView items
             recyclerView.setLayoutManager(new GridLayoutManager(MainActivity.this, 1)); // Set layout manager for RecyclerView

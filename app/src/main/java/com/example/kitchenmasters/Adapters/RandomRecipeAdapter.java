@@ -17,7 +17,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
-
+//the code was hevily debugged using chatgpt so the code is not entirely mine
 public class RandomRecipeAdapter extends RecyclerView.Adapter<RandomRecipeViewHolder>{//uses the recyclerview holder
    Context context;
    List<Recipe> list;

@@ -125,7 +125,7 @@ public class Camera extends AppCompatActivity {
             if (item.getItemId() == R.id.home) {
                 startActivity(new Intent(Camera.this, MainActivity.class));
                 return true;
-            } else if (item.getItemId() == R.id.list) {
+            } else if (item.getItemId() == R.id.checklist) {
                 startActivity(new Intent(Camera.this, List.class));
                 return true;
             } else if (item.getItemId() == R.id.calculator) {

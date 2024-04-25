@@ -25,6 +25,6 @@ public class ListDataStorage {
     }
 
     public synchronized void clearDetectedTexts() {
-        detectedTexts.clear();
+        //detectedTexts.clear();
     }
 }
